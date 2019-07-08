@@ -9,5 +9,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "autoload": {
+        "psr-4": { "LuminFire\\LaravelFmErrorHelper\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LuminFire\\LaravelFmErrorHelper\\LaravelFmErrorHelperServiceProvider"
+            ],
+            "aliases": {
+                "FmErrorHelper": "Aws\\LaravelFmErrorHelper\\Helper"
+            }
+        }
+    }
 }

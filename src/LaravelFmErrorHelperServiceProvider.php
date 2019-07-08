@@ -4,7 +4,7 @@ namespace LuminFire\fmErrorHelper;
 
 use Illuminate\Support\ServiceProvider;
 
-class fmErrorHelperServiceProvider extends ServiceProvider
+class LaravelFmErrorHelperServiceProvider extends ServiceProvider
 {
 
     /**
@@ -24,7 +24,7 @@ class fmErrorHelperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__.'/fmErrorHelper.php';
-        $this->app->make('LuminFire\fmErrorHelper\fmErrorHelper');
+        include __DIR__.'/LaravelFmErrorHelper.php';
+        $this->app->make('LuminFire\LaravelFmErrorHelper\Helper');
     }
 }

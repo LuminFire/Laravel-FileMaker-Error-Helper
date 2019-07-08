@@ -1,8 +1,8 @@
 <?php
 
-namespace LuminFire\fmErrorHelper;
+namespace LuminFire\LaravelFmErrorHelper;
 
-class fmErrorHelper
+class Helper
 {
     /**
      * FileMaker to HTTP status code mapping.

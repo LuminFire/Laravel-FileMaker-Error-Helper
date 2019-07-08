@@ -1,6 +1,6 @@
 <?php
 
-namespace LuminFire\fmErrorHelper;
+namespace LuminFire\LaravelFmErrorHelper;
 
 use Illuminate\Support\ServiceProvider;
 

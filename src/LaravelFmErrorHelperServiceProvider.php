@@ -24,7 +24,7 @@ class LaravelFmErrorHelperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__.'/LaravelFmErrorHelper.php';
+        include __DIR__.'/Helper.php';
         $this->app->make('LuminFire\LaravelFmErrorHelper\Helper');
     }
 }

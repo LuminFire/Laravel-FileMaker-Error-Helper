@@ -16,10 +16,7 @@
         "laravel": {
             "providers": [
                 "LuminFire\\LaravelFmErrorHelper\\LaravelFmErrorHelperServiceProvider"
-            ],
-            "aliases": {
-                "FmErrorHelper": "LuminFire\\LaravelFmErrorHelper\\Helper"
-            }
+            ]
         }
     }
 }

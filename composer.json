@@ -1,6 +1,7 @@
 {
     "name": "luminfire/laravel-fmerrorhelper",
     "description": "A package to decode FileMaker Pro error codes to HTTP status codes and messages.",
+    "version": "1.0",
     "type": "library",
     "authors": [
         {

@@ -7,8 +7,12 @@
     "type": "library",
     "authors": [
         {
+            "name": "LuminFire",
+            "email": "help@luminfire.com",
+            "role": "Owner"
+        },
+        {
             "name": "Andrew Minion",
-            "email": "andrew.minion@luminfire.com",
             "role": "Developer"
         }
     ],

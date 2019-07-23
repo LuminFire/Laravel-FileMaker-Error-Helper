@@ -2,22 +2,7 @@ This is a service provider for Laravel/Lumen to help look up FileMaker Pro error
 
 # Installation
 
-Add this to your `composer.json`:
-
-```json
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@git.luminfire.net:products/brilliant-gateway/laravel-fm-error-helper.git"
-        }
-    ],
-```
-
-Add this line to the `require` object in your `composer.json`:
-
-```json
-    "luminfire/laravel-fmerrorhelper": "^1.0"
-```
+Run `composer require luminfire/laravel-fmerrorhelper`
 
 ## Lumen
 

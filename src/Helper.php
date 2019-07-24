@@ -24,7 +24,7 @@ class Helper
         ],
         1 => [
             'filemaker' => 1,
-            'http' => 499,
+            'http' => 408,
             'message' => 'User canceled action',
         ],
         2 => [
@@ -129,57 +129,57 @@ class Helper
         ],
         100 => [
             'filemaker' => 100,
-            'http' => 404,
+            'http' => 500,
             'message' => 'File is missing',
         ],
         101 => [
             'filemaker' => 101,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Record is missing',
         ],
         102 => [
             'filemaker' => 102,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Field is missing',
         ],
         103 => [
             'filemaker' => 103,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Relationship is missing',
         ],
         104 => [
             'filemaker' => 104,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Script is missing',
         ],
         105 => [
             'filemaker' => 105,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Layout is missing',
         ],
         106 => [
             'filemaker' => 106,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Table is missing',
         ],
         107 => [
             'filemaker' => 107,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Index is missing',
         ],
         108 => [
             'filemaker' => 108,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Value list is missing',
         ],
         109 => [
             'filemaker' => 109,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Privilege set is missing',
         ],
         110 => [
             'filemaker' => 110,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Related tables are missing',
         ],
         111 => [
@@ -189,47 +189,47 @@ class Helper
         ],
         112 => [
             'filemaker' => 112,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Window is missing',
         ],
         113 => [
             'filemaker' => 113,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Function is missing',
         ],
         114 => [
             'filemaker' => 114,
-            'http' => 404,
+            'http' => 500,
             'message' => 'File reference is missing',
         ],
         115 => [
             'filemaker' => 115,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Menu set is missing',
         ],
         116 => [
             'filemaker' => 116,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Layout object is missing',
         ],
         117 => [
             'filemaker' => 117,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Data source is missing',
         ],
         118 => [
             'filemaker' => 118,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Theme is missing',
         ],
         130 => [
             'filemaker' => 130,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Files are damaged or missing and must be reinstalled',
         ],
         131 => [
             'filemaker' => 131,
-            'http' => 404,
+            'http' => 500,
             'message' => 'Language pack files are missing',
         ],
         200 => [
@@ -249,7 +249,7 @@ class Helper
         ],
         203 => [
             'filemaker' => 203,
-            'http' => 404,
+            'http' => 500,
             'message' => 'No records in file to print, or password doesn\'t allow print access',
         ],
         204 => [
@@ -1279,10 +1279,10 @@ class Helper
      *
      * @since 1.0.0
      *
-     * @param string|int $fmCode   FileMaker error code.
-     * @param string|int $fallback Fallback error code.
+     * @param string|int $fmCode   FileMaker error message.
+     * @param string|int $fallback Fallback error message.
      *
-     * @return string|int
+     * @return string|int          Error message.
      */
     public static function getErrorMessage($fmCode, $fallback)
     {
@@ -1302,7 +1302,7 @@ class Helper
      * @param string|int $fmCode   FileMaker error code.
      * @param string|int $fallback Fallback error code.
      *
-     * @return string|int
+     * @return string|int          HTTP status code.
      */
     public static function getErrorCode($fmCode, $fallback)
     {
@@ -1313,5 +1313,4 @@ class Helper
 
         return $fallback;
     }
-
 }

@@ -3,7 +3,7 @@
     "description": "A package to decode FileMaker Pro error codes to HTTP status codes and messages.",
     "keywords": ["error", "filemaker", "filemaker pro", "laravel", "lumen"],
     "homepage": "https://github.com/LuminFire/Laravel-FileMaker-Error-Helper",
-    "version": "1.0",
+    "version": "1.0.1",
     "type": "library",
     "authors": [
         {

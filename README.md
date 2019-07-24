@@ -2,7 +2,7 @@ This is a service provider for Laravel/Lumen to help look up FileMaker Pro error
 
 # Installation
 
-Run `composer require luminfire/laravel-fmerrorhelper`
+Run `composer require luminfire/laravel-fmerrorhelper`.
 
 ## Lumen
 

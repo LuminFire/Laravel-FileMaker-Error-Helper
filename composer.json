@@ -1,10 +1,10 @@
 {
     "name": "luminfire/laravel-fmerrorhelper",
-    "description": "A package to decode FileMaker Pro error codes to HTTP status codes and messages.",
+    "description": "A package to convert FileMaker Pro error codes to HTTP status codes and messages.",
     "license": "MIT",
-    "keywords": ["error", "filemaker", "filemaker pro", "laravel", "lumen"],
+    "keywords": ["error", "status", "rest", "rest-api", "api", "filemaker", "filemaker pro", "laravel", "lumen"],
     "homepage": "https://github.com/LuminFire/Laravel-FileMaker-Error-Helper",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "type": "library",
     "authors": [
         {

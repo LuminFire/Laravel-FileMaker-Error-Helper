@@ -322,6 +322,11 @@ class Helper
             'http' => 400,
             'message' => 'Password and verify password do not match',
         ],
+        219 => [
+            'filemaker' => 219,
+            'http' => 403,
+            'message' => 'Cannot open file; must be licensed user; contact team manager',
+        ],
         300 => [
             'filemaker' => 300,
             'http' => 423,
@@ -832,6 +837,11 @@ class Helper
             'http' => 500,
             'message' => 'One or more containers failed to transfer',
         ],
+        870 => [
+            'filemaker' => 870,
+            'http' => 409,
+            'message' => 'Cannot modify file because another user is modifying it',
+        ],
         900 => [
             'filemaker' => 900,
             'http' => 500,
@@ -1271,6 +1281,67 @@ class Helper
             'filemaker' => 1635,
             'http' => 500,
             'message' => 'Connection is unencrypted',
+        ],
+        1700 => [
+            'filemaker' => 1700,
+            'http' => 404,
+            'message' => 'Resource doesn’t exist',
+        ],
+        1701 => [
+            'code' => 1701,
+            'http' => 503,
+            'message' => 'Host is currently unable to receive requests',
+        ],
+
+        1702 => [
+            'code' => 1702,
+            'http' => 500,
+            'message' => 'Authentication information wasn’t provided in the correct format; verify the value of the Authorization header',
+        ],
+        1703 => [
+            'code' => 1703,
+            'http' => 500,
+            'message' => 'Invalid username or password, or JSON Web Token',
+        ],
+        1704 => [
+            'code' => 1704,
+            'http' => 405,
+            'message' => 'Resource doesn’t support the specified HTTP verb',
+        ],
+        1705 => [
+            'code' => 1705,
+            'http' => 403,
+            'message' => 'Required HTTP header wasn’t specified',
+        ],
+        1706 => [
+            'code' => 1706,
+            'http' => 400,
+            'message' => 'Parameter isn’t supported',
+        ],
+        1707 => [
+            'code' => 1707,
+            'http' => 400,
+            'message' => 'Required parameter wasn’t specified in the request',
+        ],
+        1708 => [
+            'code' => 1708,
+            'http' => 400,
+            'message' => 'Parameter value is invalid',
+        ],
+        1709 => [
+            'code' => 1709,
+            'http' => 409,
+            'message' => 'Operation is invalid for the resource’s current status',
+        ],
+        1710 => [
+            'code' => 1710,
+            'http' => 400,
+            'message' => 'JSON input isn’t syntactically valid',
+        ],
+        1711 => [
+            'code' => 1711,
+            'http' => 503,
+            'message' => 'Host’s license has expired',
         ],
     );
 

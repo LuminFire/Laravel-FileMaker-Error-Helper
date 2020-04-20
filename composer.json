@@ -4,7 +4,7 @@
     "license": "MIT",
     "keywords": ["error", "status", "rest", "rest-api", "api", "filemaker", "filemaker pro", "laravel", "lumen"],
     "homepage": "https://github.com/LuminFire/Laravel-FileMaker-Error-Helper",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "type": "library",
     "authors": [
         {

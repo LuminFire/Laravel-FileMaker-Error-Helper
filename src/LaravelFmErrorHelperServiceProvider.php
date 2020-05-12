@@ -24,6 +24,21 @@ class LaravelFmErrorHelperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        require_once __DIR__.'/Helper.php';
+        $this->app->singleton(
+            'laravel-fmerrorhelper',
+            static function ($app) {
+                return new FMError();
+            }
+        );
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides() : array
+    {
+        return ['laravel-fmerrorhelper'];
     }
 }

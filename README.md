@@ -2,14 +2,14 @@ This is a service provider for Laravel/Lumen to help look up FileMaker Pro error
 
 # Installation
 
-Run `composer require luminfire/laravel-fmerrorhelper`.
+Run `composer require brilliantpackages/laravel-fmerrorhelper`.
 
 ## Lumen
 
 Add this line to `bootstrap/app.php` to register the service provider:
 
 ```php
-$app->register(LuminFire\LaravelFmErrorHelper\LaravelFmErrorHelperServiceProvider::class);
+$app->register(BrilliantPackages\LaravelFmErrorHelper\LaravelFmErrorHelperServiceProvider::class);
 ```
 
 # Usage

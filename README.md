@@ -14,10 +14,12 @@ $app->register(LuminFire\LaravelFmErrorHelper\LaravelFmErrorHelperServiceProvide
 
 # Usage
 
-Method 1: Use the namespaced function:
+This package should auto-register itself and the `FMError` alias for use.
+
+Method 1: Use the alias:
 
 ```php
-LuminFire\LaravelFmErrorHelper\Helper::getErrorCode($fmCode, $fallback);
+FMError::getErrorCode($fmCode, $fallback);
 ```
 
 Method 2:
@@ -25,10 +27,9 @@ Method 2:
 Include the namespace at the top of the file:
 
 ```php
-use LuminFire\LaravelFmErrorHelper\Helper;
-```
+use LuminFire\LaravelFmErrorHelper\Helper as FMError;
 
-Then call the `getErrorCode`/`getErrorMessage` function:
-```php
-Helper::getErrorCode($fmCode, $fallback);
+# Use the getErrorCode/getErrorMessage function as needed:
+$code = FMError::getErrorCode($fmCode, $fallback);
+$message = FMError::getErrorMessage($fmCode, $fallback);
 ```

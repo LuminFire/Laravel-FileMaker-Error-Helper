@@ -2,9 +2,10 @@
 
 namespace BrilliantPackages\LaravelFmErrorHelper;
 
+use \Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-class LaravelFmErrorHelperServiceProvider extends ServiceProvider
+class LaravelFmErrorHelperServiceProvider extends ServiceProvider implements DeferrableProvider
 {
 
     /**
@@ -39,6 +40,6 @@ class LaravelFmErrorHelperServiceProvider extends ServiceProvider
      */
     public function provides() : array
     {
-        return ['laravel-fmerrorhelper'];
+        return [FMError::class];
     }
 }

@@ -1,10 +1,9 @@
 {
-    "name": "luminfire/laravel-fmerrorhelper",
+    "name": "brilliantpackages/laravel-fmerrorhelper",
     "description": "A package to convert FileMaker Pro error codes to HTTP status codes and messages.",
     "license": "MIT",
     "keywords": ["error", "status", "rest", "rest-api", "api", "filemaker", "filemaker pro", "laravel", "lumen"],
     "homepage": "https://github.com/LuminFire/Laravel-FileMaker-Error-Helper",
-    "version": "1.0.5",
     "type": "library",
     "authors": [
         {
@@ -17,15 +16,28 @@
             "role": "Developer"
         }
     ],
+    "require-dev": {
+        "phpunit/phpunit" : "^8.0",
+        "orchestra/testbench": "~3.8.0|^4.0|^5.0",
+        "nunomaduro/collision": "^3||^4"
+    },
     "minimum-stability": "dev",
     "autoload": {
-        "psr-4": { "LuminFire\\LaravelFmErrorHelper\\": "src/" }
+        "psr-4": { "BrilliantPackages\\LaravelFmErrorHelper\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "LuminFire\\LaravelFmErrorHelper\\LaravelFmErrorHelperServiceProvider"
-            ]
+                "BrilliantPackages\\LaravelFmErrorHelper\\LaravelFmErrorHelperServiceProvider"
+            ],
+            "aliases": {
+                "FMError": "BrilliantPackages\\LaravelFmErrorHelper\\FMError"
+            }
         }
     }
 }

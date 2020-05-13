@@ -129,37 +129,37 @@ class FMError
         ],
         100 => [
             'filemaker' => 100,
-            'http' => 400,
+            'http' => 500,
             'message' => 'File is missing',
         ],
         101 => [
             'filemaker' => 101,
-            'http' => 400,
+            'http' => 500,
             'message' => 'Record is missing',
         ],
         102 => [
             'filemaker' => 102,
-            'http' => 400,
+            'http' => 500,
             'message' => 'Field is missing',
         ],
         103 => [
             'filemaker' => 103,
-            'http' => 400,
+            'http' => 500,
             'message' => 'Relationship is missing',
         ],
         104 => [
             'filemaker' => 104,
-            'http' => 400,
+            'http' => 500,
             'message' => 'Script is missing',
         ],
         105 => [
             'filemaker' => 105,
-            'http' => 400,
+            'http' => 500,
             'message' => 'Layout is missing',
         ],
         106 => [
             'filemaker' => 106,
-            'http' => 400,
+            'http' => 500,
             'message' => 'Table is missing',
         ],
         107 => [

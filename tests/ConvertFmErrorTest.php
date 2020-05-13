@@ -1,7 +1,7 @@
 <?php
 
-use LuminFire\LaravelFmErrorHelper\FMError;
-use LuminFire\LaravelFmErrorHelper\Helper;
+use BrilliantPackages\LaravelFmErrorHelper\FMError;
+use BrilliantPackages\LaravelFmErrorHelper\Helper;
 
 class TestCase extends Orchestra\Testbench\TestCase
 {

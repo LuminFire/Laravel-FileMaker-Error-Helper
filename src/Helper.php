@@ -1,6 +1,6 @@
 <?php
 
-namespace LuminFire\LaravelFmErrorHelper;
+namespace BrilliantPackages\LaravelFmErrorHelper;
 
 class Helper
 {

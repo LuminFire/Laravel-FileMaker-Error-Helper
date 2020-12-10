@@ -20,12 +20,6 @@ cache:
     - public
 
 
-test:security-checker:
-  stage: test
-  script:
-    - /usr/local/bin/security-checker security:check composer.lock
-
-
 test:unit-tests:
   stage: test
   script:

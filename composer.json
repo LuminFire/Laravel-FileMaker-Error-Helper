@@ -1,6 +1,6 @@
 {
     "name": "brilliantpackages/laravel-fmerrorhelper",
-    "description": "A package to convert FileMaker Pro error codes to HTTP status codes and messages.",
+    "description": "A package to convert FileMaker Pro error codes to standard HTTP status codes and messages.",
     "license": "MIT",
     "keywords": [
         "error",

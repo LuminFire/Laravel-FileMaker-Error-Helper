@@ -1,4 +1,4 @@
-This is a service provider for Laravel/Lumen to help look up FileMaker Pro error codes.
+This is a service provider for Laravel/Lumen to convert FileMaker Pro error codes to standard HTTP status codes and messages.
 
 # Installation
 

@@ -11,21 +11,9 @@ stages:
   - test
   - build
 
-# Cache files for use between jobs and pipelines.
-cache:
-  key: $CI_COMMIT_REF_SLUG
-  paths:
-    - .npm
-    - vendor
-    - node_modules
-    - public
-
 include:
   - project: 'templates/gitlab/ci-templates'
     file:
-      - 'generic/merge-request-workflow.yml'
-      - 'generic/sast.yml'
-      - 'solcare/composer.yml'
-      - 'security/lockfiles.yml'
+      - 'presets/php.yml'
       - 'test/phpunit.yml'
       - 'build/composer-package.yml'

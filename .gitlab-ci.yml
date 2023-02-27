@@ -10,6 +10,7 @@ stages:
   - solcare
   - test
   - build
+  - release
 
 include:
   - project: 'templates/gitlab/ci-templates'

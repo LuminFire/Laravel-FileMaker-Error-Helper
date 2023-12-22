@@ -12,6 +12,9 @@ stages:
   - build
   - release
 
+variables:
+  PHP_VERSION: '8.2'
+
 include:
   - project: 'templates/gitlab/ci-templates'
     file:

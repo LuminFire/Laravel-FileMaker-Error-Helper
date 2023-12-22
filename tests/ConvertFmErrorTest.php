@@ -3,7 +3,7 @@
 use BrilliantPackages\LaravelFmErrorHelper\FMError;
 use BrilliantPackages\LaravelFmErrorHelper\Helper;
 
-class TestCase extends Orchestra\Testbench\TestCase
+class ConvertFmErrorTest extends Orchestra\Testbench\TestCase
 {
     public function testSuccess()
     {
